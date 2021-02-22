@@ -1,0 +1,76 @@
+/* Définition de la police utilisée pour le site */
+@font-face
+{
+	font-family: 'Raleway-Regular';
+	src: url('Raleway-Regular.ttf');
+}
+
+/* utilisation de la police pour le site */
+body
+{
+	font-family: Raleway-Regular;
+	margin: auto;
+	width: 95%;
+}
+
+/* Mise en page pour l'en-tête */
+header
+{
+	display: flex;
+	flex-direction: row;
+	padding-top: 2%;
+}
+.logo, .navigation
+{
+	width: 100%
+}
+nav ul
+{
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+}
+strong a
+{
+	color: #0065FC;
+}
+a
+{
+	color: black;
+	text-decoration: none;
+}
+a:hover
+{
+	color: #0065FC;
+	border-top: 2px solid #0065FC;
+	padding-top: 30px;
+}
+
+/* Mise en page description du site */
+h1
+{
+	font-weight: bold;
+	font-size: 20px;
+}
+p
+{
+	color: black;
+	font-family: Raleway-Regular;
+}
+
+
+
+
+
+
+
+
+
+.child
+{
+	color: orange;
+}
+i
+{
+	color: orange;
+}
