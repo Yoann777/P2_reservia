@@ -16,7 +16,7 @@
 		<!-- Mise en place de l'en-tête -->
 		<header>
 			<div class="logo">
-				<img src="Reservia.svg">
+				<p><a href="index.html" title="Retour à la page d'accueil"><img src="Reservia.svg" alt="logo Reservia" /></a></p>
 			</div>	
 			<div class="navigation">
 				<nav>
@@ -42,7 +42,7 @@
 			<div class="position">
 				<i class="fas fa-map-marker-alt"></i>
 			</div>
-			<form method="POST" action="">
+			<form method="POST">
 				<div class="entree">
 					<label for="entree"></label>
 					<input type="text" name="entree" placeholder="Indiquez une ville" />
@@ -54,6 +54,51 @@
 		</section>
 
 		<!-- Filtres -->
+		<section class="filtre">
+			<div class="filters">
+				<span class="filters_title">Filtres</span>
+				<div class="filters_options">
+					<input type="checkbox" name="type-hebergement" id="economique" value="economique" />
+					<label for="economique" class="filter-option">
+						<span aria-hidden="true" class="filter-option_icon">
+							<i class="fas fa-money-bill-wave" aria-hidden="true"></i>
+						</span>
+						<span class="filter-option_label">Économique</span>
+					</label>
+					<input type="checkbox" name="type-hebergement" id="familial" value="familial" />
+					<label for="familial" class="filter-option">
+						<span aria-hidden="true" class="filter-option_icon">
+							<i class="fas fa-child" aria-hidden="true"></i>
+						</span>
+						<span class="filter-option_label">Familial</span>
+					</label>
+					<input type="checkbox" name="type-hebergement" id="romantique" value="romantique" />
+					<label for="romantique" class="filter-option">
+						<span aria-hidden="true" class="filter-option_icon">
+							<i class="fas fa-heart" aria-hidden="true"></i>
+						</span>
+						<span class="filter-option_label">Romantique</span>
+					</label>
+					<input type="checkbox" name="type-hebergement" id="animaux" value="animaux" />
+					<label for="animaux" class="filter-option">
+						<span aria-hidden="true" class="filter-option_icon">
+							<i class="fas fa-dog" aria-hidden="true"></i>
+						</span>
+						<span class="filter-option_label">Animaux</span>
+					</label>
+				</div>
+			</div>
+			<div class="information">
+				<div class="info">
+						<i class="fas fa-info"></i>
+				</div>
+				<div class="infobis">
+					<p> Plus de 500 logements sont disponibles dans cette ville</p>
+				</div>
+			</div>
+		</section>
+
+
 
 
 		<!-- Hébergements -->
