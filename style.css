@@ -62,7 +62,7 @@ p
 i
 {
 	color: black;
-	font-size: 1.5em;
+	font-size: 25px;
 }
 .localisation
 {
@@ -89,7 +89,7 @@ form
 	border: 1px solid #F2F2F2;
 	width: 210px;
 	height: 57px;
-	font-size: 1.5em;
+	font-size: 25px;
 	padding-left: 10px;
 
 }
@@ -100,7 +100,7 @@ form
 	color: white;
 	width: 160px;
 	height: 60px;
-	font-size: 1.5em;
+	font-size: 25px;
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
 }
