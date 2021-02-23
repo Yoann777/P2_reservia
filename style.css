@@ -11,6 +11,8 @@ body
 	font-family: Raleway-Regular;
 	margin: auto;
 	width: 95%;
+	display: flex;
+	flex-direction: column;
 }
 
 /* Mise en page pour l'en-tête */
@@ -34,6 +36,7 @@ strong a
 {
 	color: #0065FC;
 }
+
 a
 {
 	color: black;
@@ -45,24 +48,28 @@ a:hover
 	border-top: 2px solid #0065FC;
 	padding-top: 30px;
 }
-
+.logo a
+{
+	border: none;
+}
 /* Mise en page description du site */
 h1
 {
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 30px;
 }
-p
+.description p
 {
 	color: black;
 	font-family: Raleway-Regular;
 }
 
 /* Mise en place de la recherche */
-i
+.position i
 {
 	color: black;
 	font-size: 25px;
+	display: inline-block;
 }
 .localisation
 {
@@ -80,8 +87,10 @@ form
 	border-top-left-radius: 20px;
 	border-bottom-left-radius: 20px;
 	width: 80px;
-	text-align: center;
-	padding-top: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
 }
 .entree input
 {
@@ -107,4 +116,90 @@ form
 .recherche input:hover
 {
 	color: black;
+}
+
+
+/* Mise en place des filtres */
+.filtre
+{
+	position: relative;
+	padding-top: 30px;
+}
+.filters
+{
+	font-weight: bold;
+	display: flex;
+}
+.filters .filters_title
+{
+	box-shadow: none;
+	margin: 20px 24px 20px 0px;
+}
+.filters .filters_options
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.filters_options input[name="type-hebergement"]
+{
+	opacity: 0;
+	position: absolute;
+	left: -9999px;
+}
+.filter-option
+{
+	margin: 5px 24px 5px 0;
+	display: flex;
+	align-items: center;
+	box-shadow: inset 0 0 0 2px #F2F2F2;
+	border-radius: 30px;
+	cursor: pointer;
+}
+.filter-option .filter-option_icon
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 16px;
+	height: 16px;
+	padding: 16px;
+	background-color: #DEEBFF;
+	border-radius: 50px;
+}
+.filter-option i
+{
+	color: #0065FC;
+}
+.filter-option .filter-option_label
+{
+	padding: 0 20px 0 15px;
+	cursor: pointer;
+}
+.filter-option .filter-option_label:hover
+{
+	color: #0065FC;
+}
+.information
+{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin: 0;
+}
+.information .info
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #F2F2F2;
+	width: 8px;
+	height: 8px;
+	padding: 8px;
+	border-radius: 18px;
+	color: #0065FC;
+}
+.infobis
+{
+	padding-left: 5px;
 }
