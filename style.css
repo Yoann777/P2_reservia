@@ -32,17 +32,17 @@ nav ul
 	display: flex;
 	justify-content: space-around;
 }
-strong a
-{
-	color: #0065FC;
-}
 
-a
+.navigation a
 {
 	color: black;
 	text-decoration: none;
 }
-a:hover
+.navigation strong a
+{
+	color: #0065FC;
+}
+.navigation a:hover
 {
 	color: #0065FC;
 	border-top: 2px solid #0065FC;
@@ -115,7 +115,8 @@ form
 }
 .recherche input:hover
 {
-	color: black;
+	color: #0065FC;
+	background-color: #DEEBFF;
 }
 
 
@@ -156,6 +157,10 @@ form
 	border-radius: 30px;
 	cursor: pointer;
 }
+.filter-option:hover
+{
+	box-shadow: 0px 0px 5px #0065FC;
+}
 .filter-option .filter-option_icon
 {
 	display: flex;
@@ -176,10 +181,6 @@ form
 	padding: 0 20px 0 15px;
 	cursor: pointer;
 }
-.filter-option .filter-option_label:hover
-{
-	color: #0065FC;
-}
 .information
 {
 	display: flex;
@@ -193,13 +194,164 @@ form
 	justify-content: center;
 	align-items: center;
 	border: 1px solid #F2F2F2;
-	width: 8px;
-	height: 8px;
-	padding: 8px;
-	border-radius: 18px;
+	width: 10px;
+	height: 10px;
+	padding: 10px;
+	border-radius: 22px;
 	color: #0065FC;
 }
 .infobis
 {
 	padding-left: 5px;
+}
+
+/* Mise en page résultat Marseille */
+.marseille
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	padding-top: 30px;
+}
+.hebergement, .populaire
+{
+	background-color: #F2F2F2;
+	border-radius: 30px;
+	padding: 20px 30px 30px 30px;
+}
+.hebergement
+{
+	width: 870px;
+}
+.hebergements
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	height: 580px;
+	min-width: 850px;
+}
+.cannebiere, .port, .mouettes, .mer, .panier, .amina
+{
+	background-color: white;
+	padding-top: 5px;
+	padding-left: 5px;
+	width: 250px;
+	height: 240px;
+	border-radius: 20px;
+	box-shadow: 0 0 5px #555;
+	text-decoration: none;
+}
+.cannebiere img, .port img, .mouettes img, .mer img, .panier img, .amina img
+{
+	object-fit: cover;
+	width: 245px;
+	height: 150px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+.cannebiere h4, .port h4, .mouettes h4, .mer h4, .panier h4, .amina h4
+{
+	padding-left: 10px;
+	font-weight: normal;
+	color: black;
+}
+mark, em
+{
+	background-color: white;
+	font-weight: bold;
+}
+.hebergement a
+{
+	text-decoration: none;
+	border: none;
+}
+.cannebiere:hover, .port:hover, .mouettes:hover, .mer:hover, .panier:hover, .amina:hover
+{
+	box-shadow: 0px 0px 5px #0065FC;
+}
+.cannebiere i, .port i, .mouettes i, .mer i, .panier i, .amina i
+{
+	color: #0065FC;
+}
+.cannebiere .inactive, .port .inactive, .mouettes .inactive, .mer .inactive, .panier .inactive, .amina .inactive
+{
+	color: #F2F2F2;
+}
+.more_result a
+{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+.more_result a:hover
+{
+	color: #0065FC;
+}
+.populaire h2
+{
+	display: flex;
+	justify-content: space-between;
+}
+.populaire
+{
+	width: 345px;
+	margin-left: 20px;
+}
+.popularite
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-between;
+	max-width: 345px;
+	height: 580px;
+}
+.soleil, .coeur, .bleu
+{
+	background-color: white;
+	padding-left: 5px;
+	width: 345px;
+	height: 160px;
+	border-radius: 20px;
+	box-shadow: 0 0 5px #555;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+}
+.soleil img, .coeur img, .bleu img
+{
+	object-fit: cover;
+	width: 140px;
+	height: 150px;
+	border-top-left-radius: 18px;
+	border-bottom-left-radius: 18px;
+}
+.soleil h4, .coeur h4, .bleu h4
+{
+	padding-left: 10px;
+	font-weight: normal;
+	color: black;
+}
+.popularite a
+{
+	text-decoration: none;
+	border: none;
+}
+.soleil:hover, .coeur:hover, .bleu:hover
+{
+	box-shadow: 0px 0px 5px #0065FC;
+}
+.soleil i, .coeur i, .bleu i
+{
+	color: #0065FC;
+}
+.soleil .inactive, .coeur .inactive, .bleu .inactive
+{
+	color: #F2F2F2;
 }
