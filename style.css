@@ -125,6 +125,10 @@ form
 
 
 /* Mise en place des filtres */
+h5
+{
+	font-size: 1.2em;
+}
 .filtre
 {
 	position: relative;
@@ -214,19 +218,21 @@ form
 {
 	display: flex;
 	flex-direction: row;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	padding-top: 30px;
+	width: 100%;
 }
 .hebergement, .populaire
 {
 	background-color: #F2F2F2;
 	border-radius: 30px;
-	padding: 20px 30px 30px 30px;
+	padding: 0 30px 30px 30px;
+	margin-top: 15px;
 }
 .hebergement
 {
-	width: 100%;
+	width: 64%;
 }
 .hebergements
 {
@@ -234,8 +240,7 @@ form
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	height: 580px;
-	min-width: 850px;
+	min-height: 580px;
 }
 .cannebiere, .port, .mouettes, .mer, .panier, .amina
 {
@@ -247,6 +252,7 @@ form
 	border-radius: 20px;
 	box-shadow: 0 0 5px #555;
 	text-decoration: none;
+	margin-top: 15px;
 }
 .cannebiere img, .port img, .mouettes img, .mer img, .panier img, .amina img
 {
@@ -256,7 +262,7 @@ form
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
 }
-.cannebiere h4, .port h4, .mouettes h4, .mer h4, .panier h4, .amina h4
+.cannebiere p, .port p, .mouettes p, .mer p, .panier p, .amina p
 {
 	padding-left: 10px;
 	font-weight: normal;
@@ -303,7 +309,7 @@ mark, em
 .populaire
 {
 	width: 345px;
-	margin-left: 20px;
+	margin-left: 5px;
 }
 .popularite
 {
@@ -313,7 +319,7 @@ mark, em
 	justify-content: space-between;
 	align-content: space-between;
 	max-width: 345px;
-	height: 580px;
+	min-height: 580px;
 }
 .soleil, .coeur, .bleu
 {
@@ -336,7 +342,7 @@ mark, em
 	border-top-left-radius: 18px;
 	border-bottom-left-radius: 18px;
 }
-.soleil h4, .coeur h4, .bleu h4
+.soleil p, .coeur p, .bleu p
 {
 	padding-left: 10px;
 	font-weight: normal;
@@ -368,18 +374,20 @@ mark, em
 .activite
 {
 	background-color: transparent;
-	height: 580px;
+	min-height: 580px;
 }
 .activ
 {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	width: 100%;
 }
 .vieux_port, .double, .parc, .double_bis
 {
 	height: 480px;
+	margin-top: 15px;
 }
 .vieux_port, .fort, .frioul, .parc, .dame, .longchamps
 {
@@ -425,7 +433,7 @@ mark, em
 {
 	padding-bottom: 14px;
 }
-.activ h4
+.activ p
 {
 	padding-left: 20px;
 	color: #000;
@@ -444,13 +452,23 @@ mark, em
 {
 	box-shadow: 0 0 5px #0065FC;
 }
+.vieux_port, .double, .parc
+{
+	margin-left: 5px;
+}
+.double, .parc, .double_bis
+{
+	margin-right: 5px;
+}
 
 /* Mise en page pied de page */
 footer
 {
+	margin-top: 20px;
 	background-color: #F2F2F2;
 	display: flex;
-	height: 200px;
+	height: 100%;
+	min-height: 200px;
 }
 .propos, .nos_heberg, .assistance
 {
