@@ -14,6 +14,10 @@ body
 	display: flex;
 	flex-direction: column;
 }
+h2
+{
+	font-size: 25px;
+}
 
 /* Mise en page pour l'en-tête */
 header
@@ -238,7 +242,7 @@ form
 	background-color: white;
 	padding-top: 5px;
 	padding-left: 5px;
-	width: 250px;
+	width: 275px;
 	height: 240px;
 	border-radius: 20px;
 	box-shadow: 0 0 5px #555;
@@ -247,7 +251,7 @@ form
 .cannebiere img, .port img, .mouettes img, .mer img, .panier img, .amina img
 {
 	object-fit: cover;
-	width: 245px;
+	width: 270px;
 	height: 150px;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
@@ -355,3 +359,90 @@ mark, em
 {
 	color: #F2F2F2;
 }
+
+/* Mise en page des activités */
+.activites
+{
+	padding-top: 30px;
+}
+.activite
+{
+	background-color: transparent;
+	height: 580px;
+}
+.activ
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+}
+.vieux_port, .double, .parc, .double_bis
+{
+	height: 480px;
+}
+.vieux_port, .fort, .frioul, .parc, .dame, .longchamps
+{
+	background-color: #FFF;
+	box-shadow: 0 0 5px #555;
+	border-radius: 20px;
+}
+.vieux_port img, .parc img
+{
+	object-fit: cover;
+	width: 300px;
+	height: 400px;
+}
+.fort img, .frioul img, .dame img, .longchamps img
+{
+	object-fit: cover;
+	width: 300px;
+}
+.fort img
+{
+	height: 170px;
+}
+.frioul img
+{
+	height: 120px;
+}
+.dame img
+{
+	height: 145px;
+}
+.longchamps img
+{
+	height: 145px;
+}
+.double, .double_bis
+{
+	display: flex;
+	flex-direction: column;
+	align-content: space-between;
+	justify-content: space-between;
+}
+.fort, .frioul, .dame, .longchamps
+{
+	padding-bottom: 14px;
+}
+.activ h4
+{
+	padding-left: 20px;
+	color: #000;
+}
+.activ a
+{
+	text-decoration: none;
+	border: none;	
+}
+.activ img
+{
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+}
+.vieux_port:hover, .fort:hover, .frioul:hover, .parc:hover, .dame:hover, .longchamps:hover
+{
+	box-shadow: 0 0 5px #0065FC;
+}
+
+/* Mise en page pied de page */
