@@ -9,25 +9,47 @@
 		<link rel="stylesheet" type="text/css" href="style.css" />
 		<!-- Liens vers fichier comportant les icônes font awesome -->
 		<link rel="stylesheet" href="fontawesome-free-5.15.2-web/css/all.min.css">
+		<!-- Mise en place des metatags -->
+		<meta name="title" content="Reservia" />
+		<meta name="description" content="Trouvez votre hébergement pour des vacances de rêve" />
+		<meta name="keywords" content="reservia, Reservia, hébergement, hebergement, vacance, vacances, reve, reves, rêve, activités" />
+		<meta name="author" content="Yoann777" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	</head>
 
 	<body>
 
 		<!-- Mise en place de l'en-tête -->
 		<header>
-			<div class="logo">
-				<p><a href="index.html" title="Retour à la page d'accueil"><img src="images/logo/Reservia.svg" alt="logo Reservia" /></a></p>
-			</div>	
-			<div class="navigation">
-				<nav>
-					<ul>
-						<li><a href="#heberg">Hébergements</a></li>
-						<li><a href="#activit">Activités</a></li>
-						<li><strong><a href="">S'inscrire</a></strong></li>
-					</ul>
-				</nav>			
+		<div class="logo">
+			<a href="index.html">
+				<img src="images/logo/Reservia.svg" alt="Reservia" title="Retour à la page d'accueil" />
+			</a>
+		</div>
+		
+			<nav>
+				<ul>
+					<li>
+						<a href="#heberg">
+							Hébergements
+						</a>
+					</li>
+					<li>
+						<a href="#activit">
+							Activités
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="subscribe" title="Devenir membre">
+				<p>
+					<a href="">
+						S'inscrire
+					</a>
+				</p>
 			</div>
-		</header>
+
+	</header>
 		<!-- Fin mise en en place de l'en-tête -->
 
 		<!-- Description -->
@@ -50,7 +72,7 @@
 					<input type="text" id="search" name="entree" placeholder="Indiquez une ville" />
 				</div>
 				<div class="recherche">
-					<input type="submit" value="Rechercher" />
+					<input type="submit" id="search" value="Recherche" />
 				</div>
 			</form>
 		</div>
