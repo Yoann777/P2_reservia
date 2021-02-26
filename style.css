@@ -4,15 +4,15 @@
 	font-family: 'Raleway-Regular';
 	src: url('Raleway-Regular.ttf');
 }
+html
+{
+	line-height: 1.15;
+}
 
 /* utilisation de la police pour le site */
 body
 {
 	font-family: Raleway-Regular;
-	margin: auto;
-	width: 95%;
-	display: flex;
-	flex-direction: column;
 }
 h2
 {
@@ -23,44 +23,78 @@ h2
 header
 {
 	display: flex;
-	flex-direction: row;
-	padding-top: 2%;
+	margin: 0 auto;
+	max-width: 1340px;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding-top: 20px;
 }
-.logo, .navigation
+header .logo
 {
-	width: 100%
-}
-nav ul
-{
-	list-style-type: none;
+	width: 33%;
+	height: 70px;
 	display: flex;
-	justify-content: space-around;
+	padding-left: 10px;
 }
-
-.navigation a
+header nav
 {
-	color: black;
+	width: 33%;
+	min-width: 220px;
+	align-self: flex-end;
+	height: 70px;
+}
+header .subscribe
+{
+	background-color: unset;
+	display: flex;
+	justify-content: center;
+	width: 20%;
+	font-size: 1em;
+}
+header a
+{
 	text-decoration: none;
 }
-.navigation strong a
+header nav ul a 
 {
-	color: #0065FC;
+	color: black;
 }
-.navigation a:hover
+header nav ul a:hover
 {
 	color: #0065FC;
 	border-top: 2px solid #0065FC;
-	padding-top: 30px;
+	padding-top: 40px;
 }
-.logo a
+header .subscribe a
 {
-	border: none;
+	color: #0065FC;
+	font-weight: bold;
+}
+header .subscribe a:hover
+{
+	background-color: #0065FC;
+	padding: 10px;
+	border-radius: 5px;
+	color: #FFF;
+}
+header nav ul
+{
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+	font-size: 1em;
+	color: black;
 }
 /* Mise en page description du site */
+.description
+{
+	max-width: 1340px;
+	margin: 0 auto;
+}
 h1
 {
 	font-weight: bold;
-	font-size: 30px;
+	font-size: 25px;
 }
 .description p
 {
@@ -77,7 +111,8 @@ h1
 }
 .localisation
 {
-	width: 450px;
+	max-width: 1340px;
+	margin: 0 auto;
 	display: flex;
 }
 form
@@ -133,6 +168,8 @@ h5
 {
 	position: relative;
 	padding-top: 30px;
+	max-width: 1340px;
+	margin: 0 auto;
 }
 .filters
 {
@@ -221,7 +258,8 @@ h5
 	flex-wrap: wrap;
 	justify-content: space-between;
 	padding-top: 30px;
-	width: 100%;
+	max-width: 1340px;
+	margin: 0 auto;
 }
 .hebergement, .populaire
 {
@@ -289,6 +327,10 @@ mark, em
 .cannebiere .inactive, .port .inactive, .mouettes .inactive, .mer .inactive, .panier .inactive, .amina .inactive
 {
 	color: #F2F2F2;
+}
+.more_result
+{
+	padding-top: 10px;
 }
 .more_result a
 {
@@ -370,6 +412,8 @@ mark, em
 .activites
 {
 	padding-top: 30px;
+	max-width: 1340px;
+	margin: 0 auto;
 }
 .activite
 {
@@ -469,6 +513,7 @@ footer
 	display: flex;
 	height: 100%;
 	min-height: 200px;
+	width: 100%;
 }
 .propos, .nos_heberg, .assistance
 {
@@ -492,4 +537,124 @@ footer a:hover
 footer h3
 {
 	font-size: 1.2em;
+}
+
+/* Règles pour les écrans style téléphone */
+@media screen and (max-width: 980px)
+{
+	/* mise en page en-tête */
+	header
+	{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	header .logo
+	{
+		width: 155px;
+		padding-left: 10px;
+	}
+	header nav
+	{
+		width: 100%;
+		order: 3;
+	}
+	header .subscribe
+	{
+		background-color: unset;
+		width: 155px;
+		display: flex;
+		justify-content: center;
+	}
+	header a
+	{
+		text-decoration: none;
+	}
+	header nav ul a 
+	{
+		color: black;
+	}
+	header nav ul a:hover
+	{
+		color: #0065FC;
+		border-top: transparent;
+	}
+	header .subscribe a
+	{
+		color: #0065FC;
+		font-weight: bold;
+	}
+	header .subscribe a:hover
+	{
+		background-color: #0065FC;
+		padding: 10px;
+		border-radius: 5px;
+		color: #FFF;
+	}
+	header nav ul
+	{
+		list-style-type: none;
+		display: flex;
+		justify-content: space-around;
+		padding-right: 25px;
+		padding: 0;
+		
+	}
+	header nav li
+	{
+		border-bottom: 3px solid #F2F2F2;
+		width: 100%;
+		text-align: center;
+		padding: 10px;
+	}
+	header nav li:hover
+	{
+		border-bottom: 3px solid #0065FC;
+		width: 100%;
+		text-align: center;
+		padding: 10px;
+	}
+
+	/* Mise en page description */
+	h1
+	{
+		font-weight: bold;
+		font-size: 20px;
+	}
+
+	/* Mise en page de la recherche */
+	.recherche input
+	{
+		background-color: #0065FC;
+		border: 1px solid #0065FC;
+		color: white;
+		width: 100px;
+		height: 60px;
+		font-size: 15px;
+		border-top-right-radius: 20px;
+		border-bottom-right-radius: 20px;
+	}
+	.recherche input:hover
+	{
+		color: #0065FC;
+		background-color: #DEEBFF;
+	}
+	.entree input
+	{
+		background-color: white;
+		border: 1px solid #F2F2F2;
+		width: 150px;
+		height: 57px;
+		font-size: 15px;
+		padding-left: 10px;
+	}	
+	.localisation
+	{
+		max-width: 360px;
+		margin: 0 auto;
+	}
+
+
+
+
 }
