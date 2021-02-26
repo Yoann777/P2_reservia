@@ -62,20 +62,21 @@
 		<!-- Fin description -->
 
 		<!-- Localisation -->
-		<div class="localisation">
-			<div class="position">
-				<i class="fas fa-map-marker-alt"></i>
+			<div class="localisation">
+				<div class="position">
+					<i class="fas fa-map-marker-alt"></i>
+				</div>
+				<form method="POST">
+					<div class="entree">
+						<label for="search"></label>
+						<input type="text" id="search" name="entree" placeholder="Indiquez une ville" />
+					</div>
+					<div class="recherche">
+						<input type="submit" id="search" value="Recherche" />
+					</div>
+				</form>
 			</div>
-			<form method="POST">
-				<div class="entree">
-					<label for="search"></label>
-					<input type="text" id="search" name="entree" placeholder="Indiquez une ville" />
-				</div>
-				<div class="recherche">
-					<input type="submit" id="search" value="Recherche" />
-				</div>
-			</form>
-		</div>
+		
 		<!-- Fin localisation -->
 
 		<!-- Filtres -->
