@@ -9,6 +9,10 @@ html
 	line-height: 1.15;
 }
 
+
+
+
+
 /* utilisation de la police pour le site */
 body
 {
@@ -19,7 +23,8 @@ h2
 	font-size: 25px;
 }
 
-/* Mise en page pour l'en-tête */
+/* Mise en page de l'en-tête */
+
 header
 {
 	display: flex;
@@ -270,7 +275,7 @@ h5
 }
 .hebergement
 {
-	width: 64%;
+	width: 800px;
 }
 .hebergements
 {
@@ -285,7 +290,7 @@ h5
 	background-color: white;
 	padding-top: 5px;
 	padding-left: 5px;
-	width: 275px;
+	width: 240px;
 	height: 250px;
 	border-radius: 20px;
 	box-shadow: 0 0 5px #555;
@@ -295,7 +300,7 @@ h5
 .cannebiere img, .port img, .mouettes img, .mer img, .panier img, .amina img
 {
 	object-fit: cover;
-	width: 270px;
+	width: 235px;
 	height: 150px;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
@@ -350,7 +355,7 @@ mark, em
 }
 .populaire
 {
-	width: 345px;
+	width: 335px;
 	margin-left: 5px;
 }
 .popularite
@@ -360,14 +365,14 @@ mark, em
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-content: space-between;
-	max-width: 345px;
+	max-width: 340px;
 	min-height: 580px;
 }
 .soleil, .coeur, .bleu
 {
 	background-color: white;
 	padding-left: 5px;
-	width: 345px;
+	width: 330px;
 	height: 160px;
 	border-radius: 20px;
 	box-shadow: 0 0 5px #555;
@@ -481,6 +486,7 @@ mark, em
 {
 	padding-left: 20px;
 	color: #000;
+	font-weight: bold;
 }
 .activ a
 {
@@ -495,14 +501,6 @@ mark, em
 .vieux_port:hover, .fort:hover, .frioul:hover, .parc:hover, .dame:hover, .longchamps:hover
 {
 	box-shadow: 0 0 5px #0065FC;
-}
-.vieux_port, .double, .parc
-{
-	margin-left: 5px;
-}
-.double, .parc, .double_bis
-{
-	margin-right: 5px;
 }
 
 /* Mise en page pied de page */
@@ -538,6 +536,18 @@ footer h3
 {
 	font-size: 1.2em;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Règles pour les écrans style téléphone */
 @media screen and (max-device-width: 480px)
@@ -656,16 +666,7 @@ footer h3
 		justify-content: center;
 	}
 
-
-
-
-
-
-
-
-
-
-
+	/* Mise en page hébergement et populaire à Marseille */
 	.marseille
 	{
 		display: flex;
@@ -681,7 +682,7 @@ footer h3
 	{
 		background-color: #F2F2F2;
 		border-radius: 0;
-		
+		width: 100%;
 		margin-top: 15px;
 		width: 980px;
 		margin: 0 auto;
@@ -692,19 +693,15 @@ footer h3
 		justify-content: space-between;
 		font-size: 20px;
 	}
-	.populaire
-	{
-		width: 100%;
-	}
 	.popularite
 	{
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
-		align-content: space-between;
 		max-width: 345px;
 		min-height: 580px;
+		margin: 0 auto;
 	}
 	.soleil, .coeur, .bleu
 	{
@@ -763,7 +760,7 @@ footer h3
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		justify-content: space-between;
+		justify-content: center;
 		min-height: 580px;
 		max-width: 345px;
 		margin: 0 auto;
@@ -831,9 +828,972 @@ footer h3
 	{
 		color: #0065FC;
 	}
+	/* Mise en page activité à Marseille pour smartphone */
+	.activites
+	{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		padding-top: 30px;
+		max-width: 980px;
+		margin: 0 auto;
+	}
+	.activite
+	{
+		width: 100%;
+		background-color: #FFF;
+		background-color: transparent;
+		min-height: 580px;
+		margin-top: 15px;
+		width: 980px;
+		margin: 0 auto;
+	}
+	.activite h2
+	{
+		font-size: 20px;
+		text-align: center;
+		padding-bottom: 10px;
+	}
+	.activ
+	{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		min-height: 580px;
+		max-width: 345px;
+		margin: 0 auto;
+	}
+
+	.vieux_port, .fort, .frioul, .parc, .dame, .longchamps
+	{
+		background-color: #FFF;
+		width: 290px;
+		height: 180px;
+	}
+	.vieux_port img, .fort img, .frioul img, .parc img, .dame img, .longchamps img
+	{
+		width: 290px;
+		object-fit: cover;
+		height: 130px;
+	}
+	.double, .double_bis
+	{
+		display: flex;
+		flex-direction: column;
+		height: 400px;
+	}
+
+	/* Mise en page du pied de page */
+	footer
+	{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin-top: 30px;
+	}
+}
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 980px) and (min-width: 481px)
+{
+	/* mise en page en-tête */
+	header
+	{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	header .logo
+	{
+		width: 155px;
+		padding-left: 10px;
+	}
+	header nav
+	{
+		width: 100%;
+		order: 3;
+	}
+	header .subscribe
+	{
+		background-color: unset;
+		width: 160px;
+		display: flex;
+		justify-content: center;
+	}
+	header a
+	{
+		text-decoration: none;
+	}
+	header nav ul a 
+	{
+		color: black;
+	}
+	header nav ul a:hover
+	{
+		color: #0065FC;
+		border-top: transparent;
+	}
+	header .subscribe a
+	{
+		color: #0065FC;
+		font-weight: bold;
+	}
+	header .subscribe a:hover
+	{
+		background-color: #0065FC;
+		padding: 10px;
+		border-radius: 5px;
+		color: #FFF;
+	}
+	header nav ul
+	{
+		list-style-type: none;
+		display: flex;
+		justify-content: space-around;
+		padding-right: 25px;
+		padding: 0;
+		
+	}
+	header nav li
+	{
+		border-bottom: 3px solid #F2F2F2;
+		width: 100%;
+		text-align: center;
+		padding: 10px;
+	}
+	header nav li:hover
+	{
+		border-bottom: 3px solid #0065FC;
+		width: 100%;
+		text-align: center;
+		padding: 10px;
+	}
+	/* Mise en page description pour tablette */
+	h1
+	{
+		font-weight: bold;
+		font-size: 22px;
+	}
+
+	/* Mise en page de la recherche */
+	.recherche input
+	{
+		background-color: #0065FC;
+		border: 1px solid #0065FC;
+		color: white;
+		width: 120px;
+		height: 60px;
+		font-size: 20px;
+		border-top-right-radius: 20px;
+		border-bottom-right-radius: 20px;
+	}
+	.recherche input:hover
+	{
+		color: #0065FC;
+		background-color: #DEEBFF;
+	}
+	.entree input
+	{
+		background-color: white;
+		border: 1px solid #F2F2F2;
+		width: 170px;
+		height: 57px;
+		font-size: 20px;
+		padding-left: 10px;
+	}	
+	.localisation
+	{
+		max-width: 360px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+	}
+
+
+	/* Mise en page hébergement et populaire à Marseille */
+	.marseille
+	{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-content: space-between;
+		padding-top: 30px;
+		max-width: 980px;
+		margin: 0 auto;
+		padding: 0;
+	}
+	.populaire
+	{
+		background-color: #F2F2F2;
+		border-radius: 0;
+		width: 100%;
+		margin-top: 15px;
+		width: 980px;
+		margin: 0 auto;
+		margin-top: 20px;
+	}
+	.populaire h2
+	{
+		display: flex;
+		justify-content: space-between;
+		font-size: 20px;
+	}
+	.popularite
+	{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		max-width: 345px;
+		min-height: 580px;
+		margin: 0 auto;
+	}
+	.soleil, .coeur, .bleu
+	{
+		background-color: white;
+		padding-left: 5px;
+		width: 400px;
+		height: 160px;
+		border-radius: 20px;
+		box-shadow: 0 0 5px #555;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+	.soleil img, .coeur img, .bleu img
+	{
+		object-fit: cover;
+		width: 130px;
+		height: 150px;
+		border-top-left-radius: 18px;
+		border-bottom-left-radius: 18px;
+	}
+	.soleil p, .coeur p, .bleu p
+	{
+		padding-left: 10px;
+		font-weight: normal;
+		color: black;
+	}
+	.popularite a
+	{
+		text-decoration: none;
+		border: none;
+	}
+	.soleil:hover, .coeur:hover, .bleu:hover
+	{
+		box-shadow: 0px 0px 5px #0065FC;
+	}
+	.soleil i, .coeur i, .bleu i
+	{
+		color: #0065FC;
+	}
+	.soleil .inactive, .coeur .inactive, .bleu .inactive
+	{
+		color: #F2F2F2;
+	}
+	.hebergement
+	{
+		background-color: #F2F2F2;
+		border-radius: 0;
+		width: 100%;
+		margin-top: 15px;
+		width: 980px;
+		margin: 0 auto;
+	}
+	.hebergement h2
+	{
+		font-size: 20px;
+	}
+	.hebergements
+	{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		min-height: 580px;
+		max-width: 345px;
+		margin: 0 auto;
+	}
+	.cannebiere, .port, .mouettes, .mer, .panier, .amina
+	{
+		background-color: white;
+		padding-top: 5px;
+		width: 400px;
+		height: 250px;
+		border-radius: 20px;
+		box-shadow: 0 0 5px #555;
+		text-decoration: none;
+		margin-top: 15px;
+	}
+	.cannebiere img, .port img, .mouettes img, .mer img, .panier img, .amina img
+	{
+		object-fit: cover;
+		width: 395px;
+		height: 150px;
+		border-top-left-radius: 15px;
+		border-top-right-radius: 15px;
+	}
+	.cannebiere p, .port p, .mouettes p, .mer p, .panier p, .amina p
+	{
+		padding-left: 10px;
+		font-weight: normal;
+		color: black;
+	}
+	mark, em
+	{
+		background-color: white;
+		font-weight: bold;
+	}
+	.hebergement a
+	{
+		text-decoration: none;
+		border: none;
+	}
+	.cannebiere:hover, .port:hover, .mouettes:hover, .mer:hover, .panier:hover, .amina:hover
+	{
+		box-shadow: 0px 0px 5px #0065FC;
+	}
+	.cannebiere i, .port i, .mouettes i, .mer i, .panier i, .amina i
+	{
+		color: #0065FC;
+	}
+	.cannebiere .inactive, .port .inactive, .mouettes .inactive, .mer .inactive, .panier .inactive, .amina .inactive
+	{
+		color: #F2F2F2;
+	}
+	.more_result
+	{
+		padding-top: 20px;
+		text-align: left;
+	}
+	.more_result a
+	{
+		text-decoration: none;
+		color: black;
+		font-weight: bold;
+		font-size: 1.2em;
+	}
+	.more_result a:hover
+	{
+		color: #0065FC;
+	}
+		/* Mise en page activité à Marseille pour smartphone */
+	.activites
+	{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		padding-top: 30px;
+		max-width: 980px;
+		margin: 0 auto;
+		margin-top: 20px;
+	}
+	.activite
+	{
+		width: 100%;
+		background-color: #FFF;
+		background-color: transparent;
+		min-height: 580px;
+		margin-top: 15px;
+		width: 980px;
+		margin: 0 auto;
+	}
+	.activite h2
+	{
+		font-size: 20px;
+		text-align: center;
+		margin: 0 auto;
+		padding-bottom: 20px;
+	}
+	.activ
+	{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		min-height: 580px;
+		max-width: 345px;
+		margin: 0 auto;
+	}
+
+	.vieux_port, .fort, .frioul, .parc, .dame, .longchamps
+	{
+		background-color: #FFF;
+		width: 400px;
+		height: 180px;
+	}
+	.vieux_port img, .fort img, .frioul img, .parc img, .dame img, .longchamps img
+	{
+		width: 400px;
+		object-fit: cover;
+		height: 130px;
+	}
+	.double, .double_bis
+	{
+		display: flex;
+		flex-direction: column;
+		height: 400px;
+	}
+
+	/*Mise en page footer */
+
+	footer
+	{
+		display: flex;
+		flex-direction: row;
+		margin-top: 30px;
+	}
+	footer ul
+	{
+		font-size: 0.9em;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1280px) and (min-width: 981px)
+{
+	/* Mise en page de l'en-tête PC */
+
+	header
+	{
+		display: flex;
+		margin: 0 auto;
+		max-width: 900px;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		padding-top: 20px;
+	}
+	header .logo
+	{
+		width: 33%;
+		height: 70px;
+		display: flex;
+		padding-left: 10px;
+	}	
+	header nav
+	{
+		width: 33%;
+		min-width: 220px;
+		align-self: flex-end;
+		height: 70px;
+	}
+	header .subscribe
+	{		
+		background-color: unset;
+		display: flex;
+		justify-content: center;
+		width: 20%;
+		font-size: 1em;
+	}
+	header a
+	{
+		text-decoration: none;
+	}
+	header nav ul a 
+	{
+		color: black;
+	}
+	header nav ul a:hover
+	{
+		color: #0065FC;
+		border-top: 2px solid #0065FC;
+		padding-top: 40px;
+	}
+	header .subscribe a
+	{
+		color: #0065FC;
+		font-weight: bold;
+	}
+	header .subscribe a:hover
+	{
+		background-color: #0065FC;
+		padding: 10px;
+		border-radius: 5px;
+		color: #FFF;
+	}
+	header nav ul
+	{
+		list-style-type: none;
+		display: flex;
+		justify-content: space-between;
+		font-size: 1em;
+		color: black;
+	}
+
+
+
+
+	/* Mise en page description du site */
+	.description
+	{
+		max-width: 900px;
+		margin: 0 auto;
+	}
+	h1
+	{
+		font-weight: bold;
+		font-size: 25px;
+	}
+	.description p
+	{
+		color: black;
+		font-family: Raleway-Regular;
+	}
+
+	/* Mise en place de la recherche */
+	.position i
+	{
+		color: black;
+		font-size: 25px;
+		display: inline-block;
+	}
+	.localisation
+	{
+		max-width: 900px;
+		margin: 0 auto;
+		display: flex;
+	}
+	form
+	{
+		display: flex;
+	}
+
+	.position
+	{
+		background-color: #F2F2F2;
+		border-top-left-radius: 20px;
+		border-bottom-left-radius: 20px;
+		width: 80px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.entree input
+	{
+		background-color: white;
+		border: 1px solid #F2F2F2;
+		width: 210px;
+		height: 57px;
+		font-size: 25px;
+		padding-left: 10px;
+	}
+	.recherche input
+	{
+		background-color: #0065FC;
+		border: 1px solid #0065FC;
+		color: white;
+		width: 160px;
+		height: 60px;
+		font-size: 25px;
+		border-top-right-radius: 20px;
+		border-bottom-right-radius: 20px;
+	}
+	.recherche input:hover
+	{
+		color: #0065FC;
+		background-color: #DEEBFF;
+	}
+
+	/* Mise en place des filtres */
+	h5
+	{
+		font-size: 1.2em;
+	}
+	.filtre
+	{
+		position: relative;
+		padding-top: 30px;
+		max-width: 900px;
+		margin: 0 auto;
+	}
+	.filters
+	{
+		font-weight: bold;
+		display: flex;
+	}
+	.filters .filters_title
+	{
+		box-shadow: none;
+		margin: 20px 24px 20px 0px;
+	}
+	.filters .filters_options
+	{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.filters_options input[name="type-hebergement"]
+	{
+		opacity: 0;
+		position: absolute;
+		left: -9999px;
+	}
+	.filter-option
+	{
+		margin: 5px 24px 5px 0;
+		display: flex;
+		align-items: center;
+		box-shadow: inset 0 0 0 2px #F2F2F2;
+		border-radius: 30px;
+		cursor: pointer;
+	}
+	.filter-option:hover
+	{
+		box-shadow: 0px 0px 5px #0065FC;
+	}
+	.filter-option .filter-option_icon
+	{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 16px;
+		height: 16px;
+		padding: 16px;
+		background-color: #DEEBFF;
+		border-radius: 50px;
+	}
+	.filter-option i
+	{
+		color: #0065FC;
+	}
+	.filter-option .filter-option_label
+	{
+		padding: 0 20px 0 15px;
+		cursor: pointer;
+	}
+	.information
+	{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin: 0;
+	}
+	.information .info
+	{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: 1px solid #F2F2F2;
+		width: 10px;
+		height: 10px;
+		padding: 10px;
+		border-radius: 22px;
+		color: #0065FC;
+	}
+	.infobis
+	{
+		padding-left: 5px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	.marseille
+	{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding-top: 30px;
+		max-width: 900px;
+		margin: 0 auto;
+	}
+.hebergement, .populaire
+{
+	background-color: #F2F2F2;
+	border-radius: 30px;
+	padding: 0 30px 30px 30px;
+	margin-top: 15px;
+}
+.hebergement
+{
+	width: 857px;
+}
+.hebergements
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	min-height: 580px;
+}
+.cannebiere, .port, .mouettes, .mer, .panier, .amina
+{
+	background-color: white;
+	padding-top: 5px;
+	padding-left: 5px;
+	width: 260px;
+	height: 250px;
+	border-radius: 20px;
+	box-shadow: 0 0 5px #555;
+	text-decoration: none;
+	margin-top: 15px;
+}
+.cannebiere img, .port img, .mouettes img, .mer img, .panier img, .amina img
+{
+	object-fit: cover;
+	width: 255px;
+	height: 150px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+.cannebiere p, .port p, .mouettes p, .mer p, .panier p, .amina p
+{
+	padding-left: 10px;
+	font-weight: normal;
+	color: black;
+}
+mark, em
+{
+	background-color: white;
+	font-weight: bold;
+}
+.hebergement a
+{
+	text-decoration: none;
+	border: none;
+}
+.cannebiere:hover, .port:hover, .mouettes:hover, .mer:hover, .panier:hover, .amina:hover
+{
+	box-shadow: 0px 0px 5px #0065FC;
+}
+.cannebiere i, .port i, .mouettes i, .mer i, .panier i, .amina i
+{
+	color: #0065FC;
+}
+.cannebiere .inactive, .port .inactive, .mouettes .inactive, .mer .inactive, .panier .inactive, .amina .inactive
+{
+	color: #F2F2F2;
+}
+.more_result
+{
+	padding-top: 10px;
+}
+.more_result a
+{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+.more_result a:hover
+{
+	color: #0065FC;
+}	
+.populaire h2
+{
+	display: flex;
+	justify-content: space-between;
+}
+.populaire
+{
+	width: 857px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+.popularite
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	max-width: 840px;
+	margin: 0 auto;
+	min-height: 580px;
+}
+.soleil, .coeur, .bleu
+{
+	background-color: white;
+	padding-left: 5px;
+	width: 500px;
+	height: 180px;
+	border-radius: 20px;
+	box-shadow: 0 0 5px #555;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+}
+.soleil img, .coeur img, .bleu img
+{
+	object-fit: cover;
+	width: 140px;
+	height: 170px;
+	border-top-left-radius: 18px;
+	border-bottom-left-radius: 18px;
+}
+.soleil p, .coeur p, .bleu p
+{
+	padding-left: 10px;
+	font-weight: normal;
+	color: black;
+}
+.popularite a
+{
+	text-decoration: none;
+	border: none;
+}
+.soleil:hover, .coeur:hover, .bleu:hover
+{
+	box-shadow: 0px 0px 5px #0065FC;
+}
+.soleil i, .coeur i, .bleu i
+{
+	color: #0065FC;
+}
+.soleil .inactive, .coeur .inactive, .bleu .inactive
+{
+	color: #F2F2F2;
+}
+/* Mise en page des activités */
+.activites
+{
+	padding-top: 30px;
+	max-width: 900px;
+	margin: 0 auto;
+}
+.activite
+{
+	background-color: transparent;
+	min-height: 580px;
+}
+.activ
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 857px;
+}
+.vieux_port, .double, .parc, .double_bis
+{
+	height: 480px;
+	margin-top: 15px;
+}
+.parc
+{
+	order: 2;
+}
+.vieux_port
+{
+	order: 4;
+}
+.double
+{
+	order: 3;
+}
+.double_bis
+{
+	order: 1;
+}
+
+.vieux_port, .fort, .frioul, .parc, .dame, .longchamps
+{
+	background-color: #FFF;
+	box-shadow: 0 0 5px #555;
+	border-radius: 20px;
+}
+.vieux_port img, .parc img
+{
+	object-fit: cover;
+	width: 300px;
+	height: 400px;
+}
+.fort img, .frioul img, .dame img, .longchamps img
+{
+	object-fit: cover;
+	width: 300px;
+}
+.fort img
+{
+	height: 170px;
+}
+.frioul img
+{
+	height: 120px;
+}
+.dame img
+{
+	height: 145px;
+}
+.longchamps img
+{
+	height: 145px;
+}
+.double, .double_bis
+{
+	display: flex;
+	flex-direction: column;
+	align-content: space-between;
+	justify-content: space-between;
+}
+.fort, .frioul, .dame, .longchamps
+{
+	padding-bottom: 14px;
+}
+.activ p
+{
+	padding-left: 20px;
+	color: #000;
+	font-weight: bold;
+}
+.activ a
+{
+	text-decoration: none;
+	border: none;	
+}
+.activ img
+{
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+}
+.vieux_port:hover, .fort:hover, .frioul:hover, .parc:hover, .dame:hover, .longchamps:hover
+{
+	box-shadow: 0 0 5px #0065FC;
+}
+	
 }
