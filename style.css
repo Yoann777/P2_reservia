@@ -550,7 +550,7 @@ footer h3
 
 
 /* Règles pour les écrans style téléphone */
-@media screen and (max-device-width: 480px)
+@media screen and (max-width: 480px)
 {
 	/* mise en page en-tête */
 	header
@@ -641,8 +641,8 @@ footer h3
 		width: 100px;
 		height: 60px;
 		font-size: 15px;
-		border-top-right-radius: 20px;
-		border-bottom-right-radius: 20px;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
 	}
 	.recherche input:hover
 	{
@@ -997,11 +997,12 @@ footer h3
 		background-color: #0065FC;
 		border: 1px solid #0065FC;
 		color: white;
-		width: 120px;
+		width: 100px;
 		height: 60px;
-		font-size: 20px;
-		border-top-right-radius: 20px;
-		border-bottom-right-radius: 20px;
+		font-size: 15px;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+		text-align: center;
 	}
 	.recherche input:hover
 	{
