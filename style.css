@@ -22,14 +22,16 @@ h2
 {
 	font-size: 25px;
 }
-
+.container
+{
+	max-width: 1340px;
+	margin: 0 auto;
+}
 /* Mise en page de l'en-tête */
 
 header
 {
 	display: flex;
-	margin: 0 auto;
-	max-width: 1340px;
 	justify-content: space-between;
 	flex-wrap: wrap;
 	padding-top: 20px;
@@ -39,7 +41,6 @@ header .logo
 	width: 33%;
 	height: 70px;
 	display: flex;
-	padding-left: 10px;
 }
 header nav
 {
@@ -91,15 +92,10 @@ header nav ul
 	color: black;
 }
 /* Mise en page description du site */
-.description
-{
-	max-width: 1340px;
-	margin: 0 auto;
-}
 h1
 {
 	font-weight: bold;
-	font-size: 25px;
+	font-size: 21px;
 }
 .description p
 {
@@ -116,8 +112,6 @@ h1
 }
 .localisation
 {
-	max-width: 1340px;
-	margin: 0 auto;
 	display: flex;
 }
 form
@@ -128,21 +122,22 @@ form
 .position
 {
 	background-color: #F2F2F2;
-	border-top-left-radius: 20px;
-	border-bottom-left-radius: 20px;
-	width: 80px;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	width: 50px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	height: 49px;
 
 }
 .entree input
 {
 	background-color: white;
 	border: 1px solid #F2F2F2;
-	width: 210px;
-	height: 57px;
-	font-size: 25px;
+	width: 220px;
+	height: 45px;
+	font-size: 18px;
 	padding-left: 10px;
 
 }
@@ -151,11 +146,11 @@ form
 	background-color: #0065FC;
 	border: 1px solid #0065FC;
 	color: white;
-	width: 160px;
-	height: 60px;
-	font-size: 25px;
-	border-top-right-radius: 20px;
-	border-bottom-right-radius: 20px;
+	width: 110px;
+	height: 49px;
+	font-size: 18px;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
 }
 .recherche input:hover
 {
@@ -173,8 +168,6 @@ h5
 {
 	position: relative;
 	padding-top: 30px;
-	max-width: 1340px;
-	margin: 0 auto;
 }
 .filters
 {
@@ -184,7 +177,7 @@ h5
 .filters .filters_title
 {
 	box-shadow: none;
-	margin: 20px 24px 20px 0px;
+	margin: 20px 25px 20px 0px;
 }
 .filters .filters_options
 {
@@ -210,6 +203,8 @@ h5
 .filter-option:hover
 {
 	box-shadow: 0px 0px 5px #0065FC;
+	background: #0065FC;
+	color: white;
 }
 .filter-option .filter-option_icon
 {
@@ -263,8 +258,6 @@ h5
 	flex-wrap: wrap;
 	justify-content: space-between;
 	padding-top: 30px;
-	max-width: 1340px;
-	margin: 0 auto;
 }
 .hebergement, .populaire
 {
@@ -417,8 +410,6 @@ mark, em
 .activites
 {
 	padding-top: 30px;
-	max-width: 1340px;
-	margin: 0 auto;
 }
 .activite
 {
@@ -643,6 +634,7 @@ footer h3
 		font-size: 15px;
 		border-top-right-radius: 10px;
 		border-bottom-right-radius: 10px;
+		content: ""
 	}
 	.recherche input:hover
 	{
