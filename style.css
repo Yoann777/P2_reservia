@@ -886,7 +886,7 @@ footer h3
 		border-bottom: 2px solid #F2F2F2;
 		border-right: 2px solid #F2F2F2;
 		height: 45px;
-		margin-right: 20px;
+		margin-right: 19px;
 	}
 	.filters .titre_filtre
 	{
@@ -1252,6 +1252,7 @@ footer h3
 	{
 		width: 100%;
 		text-align: left;
+		max-width: 1280px;
 	}
 	footer ul
 	{
