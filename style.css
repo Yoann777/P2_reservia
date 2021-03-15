@@ -2,7 +2,7 @@
 @font-face
 {
 	font-family: 'Raleway-Regular';
-	src: url('Raleway-Regular.ttf');
+	src: url('P2_06_annexes/Raleway-Regular.ttf');
 }
 html
 {
@@ -470,7 +470,7 @@ form
 	grid-row-gap: 2rem;
 	margin: 2rem 0;
 }
-.title_activity .activity_titre
+.title_activity
 {
 	font-size: 20px;
 	font-weight: bold;
@@ -650,7 +650,6 @@ form
 footer
 {
 	width: 100%;
-	max-width: 1366px;
 	margin: 0 auto;
 	margin-top: 20px;
 	background-color: #F2F2F2;
