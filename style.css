@@ -469,9 +469,6 @@ form
 	grid-column-gap: 2rem;
 	grid-row-gap: 2rem;
 	margin: 2rem 0;
-	height: 430px;
-	max-width: 1280px;
-	min-width: 1235px;
 }
 .title_activity .activity_titre
 {
@@ -530,42 +527,42 @@ form
 {
 	margin: 20px;
 	font-weight: bold;
-	font-size: 17px;
+	font-size: 16px;
 	display: block;
 }
 .activity .two .activity_title
 {
 	margin: 20px;
 	font-weight: bold;
-	font-size: 17px;
+	font-size: 16px;
 	display: block;
 }
 .activity .three .activity_title
 {
 	margin: 20px;
 	font-weight: bold;
-	font-size: 17px;
+	font-size: 16px;
 	display: block;
 }
 .activity .four .activity_title
 {
 	margin: 20px;
 	font-weight: bold;
-	font-size: 17px;
+	font-size: 16px;
 	display: block;
 }
 .activity .five .activity_title
 {
 	margin: 20px;
 	font-weight: bold;
-	font-size: 17px;
+	font-size: 16px;
 	display: block;
 }
 .activity .six .activity_title
 {
 	margin: 20px;
 	font-weight: bold;
-	font-size: 17px;
+	font-size: 16px;
 	display: block;
 }
 .activity a
@@ -653,6 +650,8 @@ form
 footer
 {
 	width: 100%;
+	max-width: 1366px;
+	margin: 0 auto;
 	margin-top: 20px;
 	background-color: #F2F2F2;
 	display: flex;
