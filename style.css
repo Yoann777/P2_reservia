@@ -1840,7 +1840,7 @@ footer h3
 
 	/* Mise en page du pied de page */
 	footer
-	{
+	{	
 		width: unset;
 		margin: unset;
 		padding-left: unset;
@@ -1877,8 +1877,4 @@ footer h3
 	{
 		font-size: 1em;
 	}
-
-
-
-
 }
