@@ -353,7 +353,7 @@ form
 }	
 .city .hebergement .label a:hover
 {
-	background-color: #DEEBFC;
+	background-color: #DEEBFF;
 	box-shadow: 0 0 5px #0065FC;
 }
 .city_titre
@@ -426,7 +426,7 @@ form
 }
 .city .populaire .label a:hover
 {
-	background-color: #DEEBFC;
+	background-color: #DEEBFF;
 	box-shadow: 0 0 5px #0065FC;
 }
 .populaire .label_titre
@@ -1017,7 +1017,7 @@ footer h3
 	}
 	.city .populaire .label a:hover
 	{
-		background-color: #DEEBFC;
+		background-color: #DEEBFF;
 		box-shadow: 0 0 5px #0065FC;
 	}
 	.populaire .label_titre
@@ -1103,7 +1103,7 @@ footer h3
 	}
 	.city .hebergement .label a:hover
 	{
-		background-color: #DEEBFC;
+		background-color: #DEEBFF;
 		box-shadow: 0 0 5px #0065FC;
 	}
 	.hebergement .label_titre
@@ -1216,7 +1216,7 @@ footer h3
 	}
 	.city_activity .activity a:hover
 	{
-		background-color: #DEEBFC;
+		background-color: #DEEBFF;
 		box-shadow: 0 0 5px #0065FC;
 	}
 	.city_activity .activity_title
@@ -1623,7 +1623,7 @@ footer h3
 	}
 	.city .populaire .label a:hover
 	{
-		background-color: #DEEBFC;
+		background-color: #DEEBFF;
 		box-shadow: 0 0 5px #0065FC;
 	}
 	.populaire .label_titre
@@ -1708,7 +1708,7 @@ footer h3
 	}
 	.city .hebergement .label a:hover
 	{
-		background-color: #DEEBFC;
+		background-color: #DEEBFF;
 		box-shadow: 0 0 5px #0065FC;
 	}
 	.hebergement .label_titre
@@ -1821,7 +1821,7 @@ footer h3
 	}
 	.city_activity .activity a:hover
 	{
-		background-color: #DEEBFC;
+		background-color: #DEEBFF;
 		box-shadow: 0 0 5px #0065FC;
 	}
 	.city_activity .activity_title
