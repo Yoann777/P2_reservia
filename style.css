@@ -22,6 +22,16 @@ body
 
 
 
+
+
+
+
+
+
+
+
+
+
 /* Définition d'un container pour définir une largeur à la page */
 .container
 {
@@ -103,7 +113,7 @@ h1
 	color: black;
 }
 
-	/* Mise en place de la recherche */
+/* Mise en place de la recherche */
 .position i
 {
 	color: black;
@@ -256,8 +266,6 @@ form
 {
 	padding-left: 10px;
 }
-
-
 
 /* Mise en page résultat City */
 .city
@@ -459,8 +467,6 @@ form
 	flex-direction: row;
 }
 
-
-
 /* Mise en page des activités */
 .activity
 {
@@ -650,11 +656,16 @@ form
 footer
 {
 	width: 100%;
-	margin: 0 auto;
-	margin-top: 20px;
 	background-color: #F2F2F2;
+}
+.footer_content
+{
 	display: flex;
-	padding-left: 30px;
+	flex-direction: row;
+	max-width: 100%;
+	width: 1280px;
+	margin: auto;
+	box-sizing: border-box;
 }
 .propos, .nos_heberg, .assistance
 {
@@ -697,20 +708,17 @@ footer h3
 
 
 
+
 @media screen and (max-width: 480px)
 {
 	.container
 	{
 		max-width: 350px;
-		margin: 0 auto;
 	}
-
-
 
 	/* mise en page en-tête */
 	header
 	{
-		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
 	}
@@ -726,44 +734,21 @@ footer h3
 	}
 	header .subscribe
 	{
-		background-color: unset;
 		width: 160px;
-		display: flex;
-		justify-content: center;
-	}
-	header a
-	{
-		text-decoration: none;
-	}
-	header nav ul a 
-	{
-		color: black;
 	}
 	header nav ul a:hover
 	{
-		color: #0065FC;
 		border-top: transparent;
-	}
-	header .subscribe a
-	{
-		color: #0065FC;
-		font-weight: bold;
 	}
 	header .subscribe a:hover
 	{
-		background-color: #0065FC;
 		padding: 10px;
-		border-radius: 5px;
-		color: #FFF;
 	}
 	header nav ul
 	{
-		list-style-type: none;
-		display: flex;
 		justify-content: space-around;
 		padding-right: 25px;
-		padding: 0;
-		
+		padding: 0;	
 	}
 	header nav li
 	{
@@ -783,7 +768,6 @@ footer h3
 	/* Mise en page description */
 	h1
 	{
-		font-weight: bold;
 		font-size: 22px;
 	}
 	.description p
@@ -791,55 +775,28 @@ footer h3
 		font-size: 17px;
 	}
 
-
 	/* Mise en place de la recherche */
 	.position i
 	{
-		color: black;
 		font-size: 20px;
-		display: inline-block;
 	}
 	.localisation
 	{
-		display: flex;
 		justify-content: center;
 		border: 1px solid #F2F2F2;
 		width: 345px;
 		border-radius: 15px;
 		margin-top: 35px;
 	}	
-	form
-	{
-		display: flex;
-	}
-	.position
-	{
-		background-color: #F2F2F2;
-		border-top-left-radius: 15px;
-		border-bottom-left-radius: 15px;
-		width: 50px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		height: 49px;
-	}
 	.entree input
 	{
-		background-color: white;
 		border: none;
 		width: 235px;
-		height: 45px;
 		font-size: 17px;
-		padding-left: 10px;
 	}
 	.localisation button
 	{	
-		border: unset;
-		background-color: #0065FC;
-		box-shadow: none;
 		border-radius: 15px;
-		color: #FFF;
-		text-transform: none;
 		font-size: 17px;
 		width: 50px;
 	}
@@ -851,133 +808,38 @@ footer h3
 	{
 		display: block;
 	}
-	.localisation button:hover
-	{
-		background-color: #DEEBFF;
-		border: 1px solid #0065FC;
-		border-top-right-radius: 15px;
-		border-bottom-right-radius: 15px;
-		color: #0065FC;
-		cursor: pointer;
-	}
-
-
 
 	/* Mise en place des filtres */
 	.filters .filtre
 	{
 		padding-top: 20px;
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-	}
-	.filters .option_filtre
-	{
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		font-size: 15px;
 	}
 	.filters .icon_option
 	{
-		border-top: 2px solid #F2F2F2;
-		border-bottom: 2px solid #F2F2F2;
-		border-right: 2px solid #F2F2F2;
-		height: 45px;
 		margin-right: 19px;
 	}
 	.filters .titre_filtre
 	{
-		font-weight: bold;
 		font-size: 17px;
-	}
-	.filters .titre_filtre, .filters .icon_option
-	{
-		padding: 0px 15px 0px 0px;
-		margin-top: 10px;
-		border-radius: 40px;
-		display: flex;
-		align-items: center;
-	}
-	.filters .icon_option i
-	{
-		color: #0065FC;
-		background-color: #DEEBFF;
-		width: 49px;
-		height: 49px;
-		padding-top: 0;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		border-radius: 25px;
-	}
-	.filters .option
-	{
-		padding-left: 11px;
-	}
-	.filters .option_filtre a
-	{
-		color: #000;
-		text-decoration: none;
-		font-weight: bold;
-	}
-	.filters .icon_option:hover
-	{
-		background-color: #0065FC;
-		border-top: 2px solid #DEEBFF;
-		border-bottom: 2px solid #DEEBFF;
-		border-right: 2px solid #DEEBFF;
-		color: #FFF;
-		box-shadow: 0 0 5px #0065FC;
-	}
-	.information
-	{
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-	}
-	.information .info
-	{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		border: 1px solid #F2F2F2;
-		width: 7px;
-		height: 7px;
-		padding: 10px;
-		border-radius: 16px;
-		color: #0065FC;
-		font-size: 12px;
 	}
 	.infobis
 	{
-		padding-left: 10px;
 		padding-top: 15px;
 	}
-
 
 	/* Mise en page résultat City */
 	.city
 	{
-		display: flex;
-		flex-direction: row;
 		flex-wrap: wrap-reverse;
 	}
 	.populaire
 	{
 		border-radius: inherit;
-		background-color: #F2F2F2;
 		margin-left: 0;
 	}
 	.populaire .city_titre
 	{
-		font-weight: bold;
-		font-size: 20px;
-		margin-left: 20px;
 		margin-right: 20px;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
 	}
 	.city_titre
 	{
@@ -986,184 +848,64 @@ footer h3
 	}
 	.city .populaire .label
 	{
-		display: flex;
 		flex-direction: column;
-		flex-wrap: wrap;
-		justify-content: space-between;
 		padding-top: 5px;
 		margin-left: 15px;
 		margin-right: 15px;
 		padding-bottom: 20px;
 	}
-	.city .populaire .label img
-	{
-		object-fit: cover;
-		width: 115px;
-		height: 133px;
-		padding: 5px 5px 0 5px;
-		border-top-left-radius: 20px;
-		border-bottom-left-radius: 20px;
-	}
 	.city .populaire .label a
 	{
-		background-color: #FFF;
 		width: 300px;
-		height: 143px;
-		border-radius: 20px;
-		margin: 15px 0 15px 0;
-		text-decoration: none;
 		margin-left: 5px;
 		margin-right: 5px;
 	}
-	.city .populaire .label a:hover
-	{
-		background-color: #DEEBFF;
-		box-shadow: 0 0 5px #0065FC;
-	}
-	.populaire .label_titre
-	{
-		padding-left: 15px;
-		margin-top: 15px;
-		color: #000;
-		font-weight: bold;
-	}
-	.populaire .label_price
-	{
-		color: #000;
-		font-size: 14px;
-		padding-left: 15px;
-		margin-top: 10px;
-	}
-	.populaire .label_price em
-	{
-		font-weight: bold;
-	}
-	.populaire .label_note
-	{
-		font-size: 11px;
-		padding-left: 15px;
-		margin-top: 35px;
-	}
-	.populaire .label .city_label
-	{
-		display: flex;
-		flex-direction: row;
-	}
-	.label_note .active
-	{
-		color: #0065FC;
-	}
-	.label_note .inactive
-	{
-		color: #F2F2F2;
-	}
-
 	.hebergement
 	{
 		background-color: #FFF;
 		margin-right: 0px;
 	}
-	.hebergement .city_titre
-	{
-		font-weight: bold;
-		font-size: 20px;
-		margin-left: 20px;
-	}
-
 	.city .hebergement .label
 	{
-		display: flex;
 		flex-direction: column;
-		flex-wrap: wrap;
-		justify-content: space-between;
 		margin-left: 15px;
 		margin-right: 15px;
 		padding-bottom: 5px;
 	}
 	.city .hebergement .label img
 	{
-		object-fit: cover;
 		width: 290px;
 		height: 100px;
-		padding: 5px 5px 0 5px;
-		border-top-left-radius: 20px;
-		border-top-right-radius: 20px;
 	}
 	.city .hebergement .label a
 	{
-		background-color: #FFF;
 		width: 300px;
 		height: 180px;
-		border-radius: 20px;
-		margin: 15px 0 15px 0;
-		text-decoration: none;
 		margin-left: 5px;
 		margin-right: 5px;
 		box-shadow: 0 0 5px #DDD;
-	}
-	.city .hebergement .label a:hover
-	{
-		background-color: #DEEBFF;
-		box-shadow: 0 0 5px #0065FC;
 	}
 	.hebergement .label_titre
 	{
 		padding-left: 15px;
 		margin-top: 10px;
-		color: #000;
-		font-weight: bold;
 	}
 	.hebergement .label_price
 	{
-		color: #000;
-		font-size: 14px;
 		padding-left: 15px;
-	}
-	.hebergement .label_price em
-	{
-		font-weight: bold;
 	}
 	.hebergement .label_note
 	{
-		font-size: 11px;
 		padding-left: 15px;
-	}
-
-	.label_note .active
-	{
-		color: #0065FC;
-	}
-	.label_note .inactive
-	{
-		color: #F2F2F2;
-	}
-	.hebergement .label_titre, .hebergement .label_price, .hebergement .label_note
-	{
-		margin-top: 5px;
 	}
 	.hebergement .info_sup
 	{
-		font-weight: bold;
-		font-size: 18px;
 		margin-left: 20px;
 		padding-top: 15px;
 		padding-bottom: 0px;
 	}
-	.hebergement .info_sup a
-	{
-		text-decoration: none;
-		color: #000;
-	}
-	.hebergement .info_sup a:hover
-	{
-		color: #0065FC;
-	}
-	
-	
-
 
 	/* Mise en page des activités */
-
 	.city_activity
 	{
 		margin-top: 10px;
@@ -1182,7 +924,6 @@ footer h3
 		grid-row-gap: unset;
 		margin: unset;
 	}
-
 	.city_activity .activity
 	{
 		display: flex;
@@ -1226,7 +967,6 @@ footer h3
 		color: #000;
 		font-weight: bold;
 	}
-
 	.activity .activity_title
 	{
 		display: flex;
@@ -1236,49 +976,28 @@ footer h3
 		padding-bottom: 10px;
 	}
 
-
 	/* Mise en page du pied de page */
 	footer
 	{
-		margin: unset;
-		padding-left: unset;
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
-		margin-top: 0px;
-		background-color: #F2F2F2;
 		padding-top: 20px;
-		margin-left: 0px;
+	}
+	.footer_content
+	{
+		display: unset;
 	}
 	.propos, .nos_heberg, .assistance
 	{
-		width: 100%;
-		text-align: left;
 		max-width: 1280px;
 	}
 	footer ul
 	{
-		list-style-type: none;
-		line-height: 30px;
 		padding-left: 30px;
 		padding-bottom: 20px;
 	}
 	footer a
 	{
-		text-decoration: none;
-		color: black;
 		font-size: 15px;
 	}
-	footer a:hover
-	{
-		color: #0065FC;
-	}
-	footer h3
-	{
-		font-size: 1.2em;
-	}
-
 }
 
 
@@ -1302,18 +1021,14 @@ footer h3
 
 @media screen and (min-width: 481px) and (max-width: 1024px)
 {
-		.container
+	.container
 	{
 		max-width: 700px;
-		margin: 0 auto;
 	}
-
-
 
 	/* mise en page en-tête */
 	header
 	{
-		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
 	}
@@ -1329,44 +1044,21 @@ footer h3
 	}
 	header .subscribe
 	{
-		background-color: unset;
 		width: 160px;
-		display: flex;
-		justify-content: center;
-	}
-	header a
-	{
-		text-decoration: none;
-	}
-	header nav ul a 
-	{
-		color: black;
 	}
 	header nav ul a:hover
 	{
-		color: #0065FC;
 		border-top: transparent;
-	}
-	header .subscribe a
-	{
-		color: #0065FC;
-		font-weight: bold;
 	}
 	header .subscribe a:hover
 	{
-		background-color: #0065FC;
 		padding: 10px;
-		border-radius: 5px;
-		color: #FFF;
 	}
 	header nav ul
 	{
-		list-style-type: none;
-		display: flex;
 		justify-content: space-around;
 		padding-right: 25px;
 		padding: 0;
-		
 	}
 	header nav li
 	{
@@ -1386,7 +1078,6 @@ footer h3
 	/* Mise en page description */
 	h1
 	{
-		font-weight: bold;
 		font-size: 22px;
 	}
 	.description p
@@ -1394,196 +1085,51 @@ footer h3
 		font-size: 17px;
 	}
 
-
 	/* Mise en place de la recherche */
-	.position i
-	{
-		color: black;
-		font-size: 23px;
-		display: inline-block;
-	}
 	.localisation
 	{
-		display: flex;
 		justify-content: center;
 		border: 1px solid #F2F2F2;
 		width: 420px;
 		border-radius: 15px;
 		margin-top: 30px;
 	}	
-	form
-	{
-		display: flex;
-	}
-	.position
-	{
-		background-color: #F2F2F2;
-		border-top-left-radius: 15px;
-		border-bottom-left-radius: 15px;
-		width: 50px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		height: 49px;
-	}
 	.entree input
 	{
-		background-color: white;
 		border: none;
 		width: 235px;
-		height: 45px;
 		font-size: 17px;
-		padding-left: 10px;
 	}
 	.localisation button
 	{	
-		border: unset;
-		background-color: #0065FC;
-		box-shadow: none;
-		border-top-right-radius: 15px;
-		border-bottom-right-radius: 15px;
-		color: #FFF;
-		text-transform: none;
 		font-size: 18px;
 		width: 130px;
-		height: 49px;
 	}
 	.localisation .recherche
 	{
 		display: block;
 	}
-	.localisation .recherche_icon
-	{
-		display: none;
-	}
-	.localisation button:hover
-	{
-		background-color: #DEEBFF;
-		border: 1px solid #0065FC;
-		border-top-right-radius: 15px;
-		border-bottom-right-radius: 15px;
-		color: #0065FC;
-		cursor: pointer;
-	}
-
-
 
 	/* Mise en place des filtres */
-	.filters .filtre
-	{
-		padding-top: 15px;
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-	}
-	.filters .option_filtre
-	{
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		font-size: 15px;
-	}
-	.filters .icon_option
-	{
-		border-top: 2px solid #F2F2F2;
-		border-bottom: 2px solid #F2F2F2;
-		border-right: 2px solid #F2F2F2;
-		height: 45px;
-		margin-right: 20px;
-	}
-	.filters .titre_filtre
-	{
-		font-weight: bold;
-		font-size: 15px;
-	}
-	.filters .titre_filtre, .filters .icon_option
-	{
-		padding: 0px 15px 0px 0px;
-		margin-top: 10px;
-		border-radius: 40px;
-		display: flex;
-		align-items: center;
-	}
-	.filters .icon_option i
-	{
-		color: #0065FC;
-		background-color: #DEEBFF;
-		width: 49px;
-		height: 49px;
-		padding-top: 0;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		border-radius: 25px;
-	}
-	.filters .option
-	{
-		padding-left: 11px;
-	}
-	.filters .option_filtre a
-	{
-		color: #000;
-		text-decoration: none;
-		font-weight: bold;
-	}
-	.filters .icon_option:hover
-	{
-		background-color: #0065FC;
-		border-top: 2px solid #DEEBFF;
-		border-bottom: 2px solid #DEEBFF;
-		border-right: 2px solid #DEEBFF;
-		color: #FFF;
-		box-shadow: 0 0 5px #0065FC;
-	}
-	.information
-	{
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-	}
-	.information .info
-	{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		border: 1px solid #F2F2F2;
-		width: 7px;
-		height: 7px;
-		padding: 10px;
-		border-radius: 16px;
-		color: #0065FC;
-		font-size: 12px;
-	}
 	.infobis
 	{
-		padding-left: 10px;
 		padding-top: 15px;
 		padding-bottom: 15px;
 	}
 
-
 	/* Mise en page résultat City */
 	.city
 	{
-		display: flex;
-		flex-direction: row;
 		flex-wrap: wrap-reverse;
 	}
 	.populaire
 	{
-		background-color: #F2F2F2;
 		margin-bottom: 35px;
 		width: 100%;
 	}
 	.populaire .city_titre
 	{
-		font-weight: bold;
-		font-size: 20px;
-		margin-left: 20px;
 		margin-right: 20px;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
 	}
 	.city_titre
 	{
@@ -1592,183 +1138,61 @@ footer h3
 	}
 	.city .populaire .label
 	{
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
 		justify-content: center;
 		padding-top: 5px;
-		margin-left: 25px;
-		margin-right: 25px;
 		padding-bottom: 20px;
-	}
-	.city .populaire .label img
-	{
-		object-fit: cover;
-		width: 115px;
-		height: 133px;
-		padding: 5px 5px 0 5px;
-		border-top-left-radius: 20px;
-		border-bottom-left-radius: 20px;
 	}
 	.city .populaire .label a
 	{
-		background-color: #FFF;
 		width: 300px;
-		height: 143px;
-		border-radius: 20px;
-		margin: 15px 0 15px 0;
-		text-decoration: none;
 		margin-left: 5px;
 		margin-right: 5px;
 	}
-	.city .populaire .label a:hover
-	{
-		background-color: #DEEBFF;
-		box-shadow: 0 0 5px #0065FC;
-	}
-	.populaire .label_titre
-	{
-		padding-left: 15px;
-		margin-top: 15px;
-		color: #000;
-		font-weight: bold;
-	}
-	.populaire .label_price
-	{
-		color: #000;
-		font-size: 14px;
-		padding-left: 15px;
-		margin-top: 10px;
-	}
-	.populaire .label_price em
-	{
-		font-weight: bold;
-	}
-	.populaire .label_note
-	{
-		font-size: 11px;
-		padding-left: 15px;
-		margin-top: 35px;
-	}
-	.populaire .label .city_label
-	{
-		display: flex;
-		flex-direction: row;
-	}
-	.label_note .active
-	{
-		color: #0065FC;
-	}
-	.label_note .inactive
-	{
-		color: #F2F2F2;
-	}
-
 	.hebergement
 	{
 		background-color: #FFF;
 		width: 100%;
 	}
-	.hebergement .city_titre
-	{
-		font-weight: bold;
-		font-size: 20px;
-		margin-left: 20px;
-	}
-
 	.city .hebergement .label
 	{
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
 		justify-content: center;
 		margin-left: 30px;
 		padding-bottom: 5px;
 	}
 	.city .hebergement .label img
 	{
-		object-fit: cover;
 		width: 290px;
 		height: 100px;
-		padding: 5px 5px 0 5px;
-		border-top-left-radius: 20px;
-		border-top-right-radius: 20px;
 	}
 	.city .hebergement .label a
 	{
-		background-color: #FFF;
 		width: 300px;
 		height: 180px;
-		border-radius: 20px;
-		margin: 15px 0 15px 0;
-		text-decoration: none;
 		margin-left: 5px;
 		margin-right: 5px;
 		box-shadow: 0 0 5px #DDD;
-	}
-	.city .hebergement .label a:hover
-	{
-		background-color: #DEEBFF;
-		box-shadow: 0 0 5px #0065FC;
 	}
 	.hebergement .label_titre
 	{
 		padding-left: 15px;
 		margin-top: 10px;
-		color: #000;
-		font-weight: bold;
 	}
 	.hebergement .label_price
 	{
-		color: #000;
-		font-size: 14px;
 		padding-left: 15px;
-	}
-	.hebergement .label_price em
-	{
-		font-weight: bold;
 	}
 	.hebergement .label_note
 	{
-		font-size: 11px;
 		padding-left: 15px;
-	}
-
-	.label_note .active
-	{
-		color: #0065FC;
-	}
-	.label_note .inactive
-	{
-		color: #F2F2F2;
-	}
-	.hebergement .label_titre, .hebergement .label_price, .hebergement .label_note
-	{
-		margin-top: 5px;
 	}
 	.hebergement .info_sup
 	{
-		font-weight: bold;
-		font-size: 18px;
 		margin-left: 20px;
 		padding-top: 15px;
 		padding-bottom: 15px;
 	}
-	.hebergement .info_sup a
-	{
-		text-decoration: none;
-		color: #000;
-	}
-	.hebergement .info_sup a:hover
-	{
-		color: #0065FC;
-	}
 	
-	
-
-
 	/* Mise en page des activités */
-
 	.city_activity
 	{
 		margin-top: 45px;
@@ -1787,7 +1211,6 @@ footer h3
 		font-size: 20px;
 		margin-left: 20px;
 	}
-
 	.city_activity .activity
 	{
 		display: flex;
@@ -1831,7 +1254,6 @@ footer h3
 		color: #000;
 		font-weight: bold;
 	}
-
 	.activity .activity_title
 	{
 		display: flex;
@@ -1844,34 +1266,19 @@ footer h3
 		width: unset;
 		margin: unset;
 		padding-left: unset;
-		display: flex;
 		flex-direction: row;
 		flex-wrap: nowrap;
 		margin-top: 10px;
-		background-color: #F2F2F2;
 		padding-top: 20px;
-	}
-	.propos, .nos_heberg, .assistance
-	{
-		width: 100%;
-		text-align: left;
 	}
 	footer ul
 	{
-		list-style-type: none;
-		line-height: 30px;
 		padding-left: 30px;
 		padding-bottom: 20px;
 	}
 	footer a
 	{
-		text-decoration: none;
-		color: black;
 		font-size: 0.9em;
-	}
-	footer a:hover
-	{
-		color: #0065FC;
 	}
 	footer h3
 	{
